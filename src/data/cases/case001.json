@@ -1,0 +1,487 @@
+{
+  "id": "case001",
+  "number": "001",
+  "title": "LE MÉDAILLON DISPARU",
+  "difficulty": 1,
+  "type": "Vol",
+  "estimatedMinutes": 8,
+  "summary": "Vol d'un médaillon historique en or au musée de Valmont. Aucun dégât matériel. L'enquêteur doit reconstituer le déroulement du vol à partir des journaux de sécurité, des traces matérielles et des documents retrouvés sur place.",
+  "briefing": "Musée de Valmont — vendredi 14 novembre. Le médaillon de Valmont, en or, d'une valeur estimée à 250 000 €, a été constaté disparu à 21 h 27 lors de la ronde de fermeture. L'intervalle probable du vol se situe entre 21 h 08 et 21 h 20. Aucune effraction n'a été constatée. Trois personnes se trouvaient dans le bâtiment pendant la période concernée. Reconstituez le déroulement des faits et désignez l'auteur du vol.",
+  "locationName": "Musée de Valmont",
+  "caseDate": "Vendredi 14 novembre",
+  "scenes": [
+    {
+      "id": "scene_gallery",
+      "name": "Galerie principale",
+      "artKey": "gallery",
+      "description": "Salle d'exposition nord. Le médaillon était présenté dans la vitrine centrale.",
+      "hotspots": [
+        {
+          "type": "polygon",
+          "id": "hs_display_case",
+          "label": "Vitrine d'exposition",
+          "evidenceId": "ev_display_case",
+          "points": [[0.40, 0.42], [0.56, 0.42], [0.56, 0.70], [0.40, 0.70]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_fabric_traces",
+          "label": "Support du médaillon",
+          "evidenceId": "ev_fiber_blue",
+          "points": [[0.455, 0.50], [0.545, 0.50], [0.545, 0.56], [0.455, 0.56]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_lock_system",
+          "label": "Système de fermeture",
+          "evidenceId": "ev_lock_system",
+          "points": [[0.39, 0.66], [0.43, 0.66], [0.43, 0.72], [0.39, 0.72]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_partial_prints",
+          "label": "Socle, face avant",
+          "evidenceId": "ev_partial_prints",
+          "points": [[0.53, 0.66], [0.57, 0.66], [0.57, 0.72], [0.53, 0.72]]
+        },
+        {
+          "type": "circle",
+          "id": "hs_camera",
+          "label": "Caméra de surveillance",
+          "evidenceId": "ev_camera",
+          "x": 0.855,
+          "y": 0.115,
+          "r": 0.035
+        },
+        {
+          "type": "circle",
+          "id": "hs_wall_clock",
+          "label": "Horloge murale",
+          "evidenceId": "ev_wall_clock",
+          "x": 0.135,
+          "y": 0.16,
+          "r": 0.045
+        }
+      ]
+    },
+    {
+      "id": "scene_security",
+      "name": "Poste de sécurité",
+      "artKey": "security_room",
+      "description": "Local technique du rez-de-chaussée. Poste de l'agent de sécurité.",
+      "hotspots": [
+        {
+          "type": "polygon",
+          "id": "hs_monitors",
+          "label": "Écrans de surveillance",
+          "evidenceId": "ev_monitors",
+          "points": [[0.18, 0.30], [0.52, 0.30], [0.52, 0.47], [0.18, 0.47]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_ops_log",
+          "label": "Journal des opérations",
+          "evidenceId": "ev_ops_log",
+          "points": [[0.60, 0.52], [0.80, 0.52], [0.80, 0.62], [0.60, 0.62]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_access_log",
+          "label": "Journal d'accès",
+          "evidenceId": "ev_access_log",
+          "points": [[0.60, 0.66], [0.80, 0.66], [0.80, 0.76], [0.60, 0.76]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_call_log",
+          "label": "Journal des appels internes",
+          "evidenceId": "ev_call_log",
+          "points": [[0.60, 0.38], [0.80, 0.38], [0.80, 0.48], [0.60, 0.48]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_badge",
+          "label": "Badge de sécurité",
+          "evidenceId": "ev_badge_g04",
+          "points": [[0.28, 0.60], [0.36, 0.60], [0.36, 0.70], [0.28, 0.70]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_locker_security",
+          "label": "Casier du poste",
+          "evidenceId": "ev_locker_security",
+          "points": [[0.86, 0.34], [0.97, 0.34], [0.97, 0.72], [0.86, 0.72]]
+        }
+      ]
+    },
+    {
+      "id": "scene_workshop",
+      "name": "Atelier de restauration",
+      "artKey": "workshop",
+      "description": "Atelier de la restauratrice, aile est du rez-de-chaussée.",
+      "hotspots": [
+        {
+          "type": "polygon",
+          "id": "hs_workbench",
+          "label": "Table de travail",
+          "evidenceId": "ev_workbench",
+          "points": [[0.22, 0.52], [0.62, 0.52], [0.62, 0.68], [0.22, 0.68]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_fabric_samples",
+          "label": "Échantillons de tissus",
+          "evidenceId": "ev_fabric_samples",
+          "points": [[0.70, 0.36], [0.92, 0.36], [0.92, 0.50], [0.70, 0.50]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_exit_register",
+          "label": "Registre de sortie",
+          "evidenceId": "ev_exit_register",
+          "points": [[0.30, 0.44], [0.46, 0.44], [0.46, 0.51], [0.30, 0.51]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_inventory",
+          "label": "Inventaire du matériel",
+          "evidenceId": "ev_inventory",
+          "points": [[0.55, 0.44], [0.68, 0.44], [0.68, 0.51], [0.55, 0.51]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_pro_docs",
+          "label": "Dossiers professionnels",
+          "evidenceId": "ev_pro_docs",
+          "points": [[0.08, 0.55], [0.20, 0.55], [0.20, 0.68], [0.08, 0.68]]
+        }
+      ]
+    },
+    {
+      "id": "scene_locker",
+      "name": "Vestiaire du gardien",
+      "artKey": "guard_locker",
+      "description": "Vestiaires du personnel. Casier attribué à l'agent Étienne Roux.",
+      "hotspots": [
+        {
+          "type": "polygon",
+          "id": "hs_locker_etienne",
+          "label": "Casier d'Étienne Roux (G-04)",
+          "evidenceId": "ev_locker_etienne",
+          "points": [[0.30, 0.24], [0.46, 0.24], [0.46, 0.58], [0.30, 0.58]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_maintenance_pouch",
+          "label": "Pochette de maintenance",
+          "evidenceId": "ev_maintenance_pouch",
+          "points": [[0.33, 0.62], [0.47, 0.62], [0.47, 0.74], [0.33, 0.74]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_bank_notice",
+          "label": "Documents personnels",
+          "evidenceId": "ev_bank_notice",
+          "points": [[0.52, 0.24], [0.68, 0.24], [0.68, 0.58], [0.52, 0.58]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_purchase_offer",
+          "label": "Imprimé au fond du casier",
+          "evidenceId": "ev_purchase_offer",
+          "points": [[0.72, 0.62], [0.90, 0.62], [0.90, 0.76], [0.72, 0.76]]
+        },
+        {
+          "type": "polygon",
+          "id": "hs_jacket",
+          "label": "Veste de sécurité",
+          "evidenceId": "ev_jacket",
+          "points": [[0.10, 0.40], [0.24, 0.40], [0.24, 0.72], [0.10, 0.72]]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev_display_case",
+      "name": "Vitrine d'exposition vide",
+      "category": "visual_observation",
+      "sceneId": "scene_gallery",
+      "description": "La vitrine centrale est vide. Le médaillon n'est plus sur son support.",
+      "detail": "La vitrine est intacte : aucun verre brisé, aucune trace d'effraction sur le cadre. Le médaillon a donc été retiré après ouverture régulière de la vitrine, avec une clé ou un code d'accès légitime.",
+      "icon": "cube-outline"
+    },
+    {
+      "id": "ev_fiber_blue",
+      "name": "Fibre textile bleue",
+      "category": "material_trace",
+      "sceneId": "scene_gallery",
+      "description": "Une fibre de tissu bleu foncé est accrochée au support du médaillon.",
+      "detail": "Analyse rapide : fibre de coton épais, teinture bleu de travail. La fibre est fraîche. Le médaillon a été emporté dans un contenant en tissu bleu foncé.",
+      "icon": "layers-outline"
+    },
+    {
+      "id": "ev_lock_system",
+      "name": "Système de fermeture",
+      "category": "technical_report",
+      "sceneId": "scene_gallery",
+      "description": "Le rapport technique indique que la serrure de la vitrine n'a pas été forcée.",
+      "detail": "La serrure électronique de la vitrine fonctionne normalement. Dernière ouverture enregistrée : 21 h 12, avec un badge d'accès autorisé. Aucune tentative d'effraction détectée.",
+      "icon": "lock-closed-outline"
+    },
+    {
+      "id": "ev_partial_prints",
+      "name": "Empreintes partielles",
+      "category": "material_trace",
+      "sceneId": "scene_gallery",
+      "description": "Empreintes digitales partielles sur le socle de la vitrine.",
+      "detail": "Les empreintes appartiennent aux membres du personnel habilités à manipuler les pièces. Elles sont anciennes et sans valeur d'identification directe pour le vol.",
+      "icon": "finger-print-outline"
+    },
+    {
+      "id": "ev_camera",
+      "name": "Caméra de surveillance",
+      "category": "visual_observation",
+      "sceneId": "scene_gallery",
+      "description": "La caméra de la galerie est en position normale, voyant d'activité allumé.",
+      "detail": "La caméra couvre la vitrine centrale. Le voyant est allumé à l'heure actuelle. Les enregistrements correspondant à la période 21 h 08 – 21 h 20 sont manquants : la caméra a été coupée pendant cet intervalle.",
+      "icon": "videocam-outline"
+    },
+    {
+      "id": "ev_wall_clock",
+      "name": "Horloge murale",
+      "category": "chronological_clue",
+      "sceneId": "scene_gallery",
+      "description": "L'horloge de la galerie indique l'heure exacte, elle est réglée sur l'heure du bâtiment.",
+      "detail": "L'horloge est synchronisée sur l'horloge centrale du musée, la même que celle des journaux de sécurité. Les horaires inscrits dans les documents peuvent donc être comparés directement.",
+      "icon": "time-outline"
+    },
+    {
+      "id": "ev_monitors",
+      "name": "Écrans de surveillance",
+      "category": "visual_observation",
+      "sceneId": "scene_security",
+      "description": "Les écrans du poste affichent les flux en temps réel de toutes les salles.",
+      "detail": "Le flux de la galerie principale est de nouveau actif. L'historique local confirme une coupure du flux galerie entre 21 h 08 et 21 h 20. La coupure a été commandée depuis ce poste.",
+      "icon": "desktop-outline"
+    },
+    {
+      "id": "ev_ops_log",
+      "name": "Journal des opérations",
+      "category": "time_record",
+      "sceneId": "scene_security",
+      "description": "Journal système des activations et désactivations de sécurité.",
+      "detail": "21 h 08 — Caméra galerie principale : DÉSACTIVÉE.\n21 h 11 — Alarme salle nord : DÉSACTIVÉE.\n21 h 20 — Caméra galerie principale : RÉACTIVÉE.\n21 h 21 — Alarme salle nord : RÉACTIVÉE.\nLes quatre opérations portent l'identifiant opérateur G-04.",
+      "icon": "document-text-outline",
+      "metadata": { "Identifiant opérateur": "G-04", "Période": "21 h 08 – 21 h 21" }
+    },
+    {
+      "id": "ev_access_log",
+      "name": "Journal d'accès",
+      "category": "time_record",
+      "sceneId": "scene_security",
+      "description": "Journal des passages de badges dans le bâtiment.",
+      "detail": "21 h 14 — Badge G-04 : accès galerie principale.\n21 h 19 — Badge G-04 : sortie galerie principale.\nAucun autre badge n'a ouvert la galerie pendant l'intervalle 21 h 08 – 21 h 25.",
+      "icon": "key-outline",
+      "metadata": { "Badge": "G-04" }
+    },
+    {
+      "id": "ev_call_log",
+      "name": "Journal des appels internes",
+      "category": "time_record",
+      "sceneId": "scene_security",
+      "description": "Journal du standard téléphonique du bâtiment.",
+      "detail": "21 h 10 – 21 h 24 — Appel professionnel en provenance de la fondation Valverre, reçu au bureau du directeur. La ligne du bureau est une ligne fixe avec combiné filaire : l'appel ne pouvait être pris que sur place.",
+      "icon": "call-outline"
+    },
+    {
+      "id": "ev_badge_g04",
+      "name": "Badge de sécurité G-04",
+      "category": "document",
+      "sceneId": "scene_security",
+      "description": "Badge nominatif accroché au poste : G-04 — Étienne Roux, agent de sécurité.",
+      "detail": "Le registre du personnel attribue l'identifiant G-04 à Étienne Roux, agent de sécurité de nuit. C'est le seul opérateur habilité à commander les systèmes depuis le poste de sécurité.",
+      "icon": "id-card-outline"
+    },
+    {
+      "id": "ev_locker_security",
+      "name": "Casier du poste",
+      "category": "physical_object",
+      "sceneId": "scene_security",
+      "description": "Casier mural du poste de sécurité, vidé de son contenu utile.",
+      "detail": "Le casier contient uniquement une torche et un jeu de clés de service commun. Aucun élément utile à l'enquête.",
+      "icon": "server-outline"
+    },
+    {
+      "id": "ev_workbench",
+      "name": "Table de travail",
+      "category": "physical_object",
+      "sceneId": "scene_workshop",
+      "description": "Table de restauration avec outils rangés.",
+      "detail": "Les outils sont rangés et compte. Rien ne manque. L'atelier n'a pas servi pendant l'intervalle du vol.",
+      "icon": "construct-outline"
+    },
+    {
+      "id": "ev_fabric_samples",
+      "name": "Échantillons de tissus",
+      "category": "document",
+      "sceneId": "scene_workshop",
+      "description": "Carte d'échantillons du fournisseur de tissus de l'atelier.",
+      "detail": "L'échantillon « coton de travail bleu nuit » correspond exactement à la fibre retrouvée sur le support du médaillon. La restauratrice utilise ce tissu pour confectionner les pochettes de maintenance du musée.",
+      "icon": "color-palette-outline"
+    },
+    {
+      "id": "ev_exit_register",
+      "name": "Registre de sortie",
+      "category": "time_record",
+      "sceneId": "scene_workshop",
+      "description": "Registre de sortie du personnel tenu par l'atelier.",
+      "detail": "21 h 03 — Maya Simon, restauratrice : sortie du bâtiment, contreseing de l'agent de sécurité. Maya Simon n'était plus dans le musée au moment du vol.",
+      "icon": "log-out-outline"
+    },
+    {
+      "id": "ev_inventory",
+      "name": "Inventaire du matériel",
+      "category": "document",
+      "sceneId": "scene_workshop",
+      "description": "Inventaire mensuel du matériel de l'atelier.",
+      "detail": "Inventaire arrêté au 12 novembre, deux jours avant les faits. Rien d'exploitable pour l'enquête en cours.",
+      "icon": "list-outline"
+    },
+    {
+      "id": "ev_pro_docs",
+      "name": "Dossiers professionnels",
+      "category": "document",
+      "sceneId": "scene_workshop",
+      "description": "Dossiers de restauration en cours.",
+      "detail": "Dossiers de traitement d'œuvres, sans lien avec le médaillon ni avec l'intervalle du vol.",
+      "icon": "folder-open-outline"
+    },
+    {
+      "id": "ev_locker_etienne",
+      "name": "Casier d'Étienne Roux",
+      "category": "physical_object",
+      "sceneId": "scene_locker",
+      "description": "Casier personnel n° 04, non verrouillé.",
+      "detail": "À l'intérieur : une pochette de maintenance en tissu bleu foncé, des documents personnels et un imprimé froissé. La pochette est sensée rester suspendue au poste de sécurité.",
+      "icon": "archive-outline"
+    },
+    {
+      "id": "ev_maintenance_pouch",
+      "name": "Pochette de maintenance",
+      "category": "physical_object",
+      "sceneId": "scene_locker",
+      "description": "Pochette en tissu bleu foncé, confectionnée par l'atelier.",
+      "detail": "Le tissu correspond à l'échantillon « coton de travail bleu nuit » de l'atelier et à la fibre retrouvée sur le support du médaillon. La pochette est assez grande pour contenir un objet de la taille du médaillon. Elle se trouvait dans le casier d'Étienne Roux.",
+      "icon": "briefcase-outline"
+    },
+    {
+      "id": "ev_bank_notice",
+      "name": "Notification bancaire",
+      "category": "document",
+      "sceneId": "scene_locker",
+      "description": "Avis de relance bancaire retrouvé dans le casier d'Étienne Roux.",
+      "detail": "Trois mensualités impayées sur un crédit personnel, dernière relance datée du 10 novembre. Montant total réclamé : 9 740 €. Situation financière très dégradée.",
+      "icon": "card-outline"
+    },
+    {
+      "id": "ev_purchase_offer",
+      "name": "Proposition d'achat privée",
+      "category": "written_message",
+      "sceneId": "scene_locker",
+      "description": "Imprimé froissé retrouvé au fond du casier d'Étienne Roux.",
+      "detail": "« …pour la pièce dorée du 14e siècle, je paie comptant, 40 % de la valeur estimée. Contact discrètement avant le 20. » Le document mentionne explicitement une revente rapide d'une pièce dorée ancienne, sans passer par le marché officiel.",
+      "icon": "mail-open-outline"
+    },
+    {
+      "id": "ev_jacket",
+      "name": "Veste de sécurité",
+      "category": "physical_object",
+      "sceneId": "scene_locker",
+      "description": "Veste d'uniforme pendue dans le vestiaire.",
+      "detail": "Veste de service standard, poches vides. Rien d'exploitable.",
+      "icon": "shirt-outline"
+    }
+  ],
+  "suspects": [
+    {
+      "id": "suspect_etienne",
+      "name": "Étienne Roux",
+      "age": 41,
+      "occupation": "Agent de sécurité",
+      "relation": "Agent de sécurité de nuit du musée, opérateur G-04.",
+      "statement": "« J'ai passé la soirée à l'accueil, de 21 h à 21 h 30. Je n'ai pas quitté mon poste. »",
+      "timeline": [
+        "21 h 00 – 21 h 30 : déclaration — poste à l'accueil.",
+        "Journal des opérations : opérations G-04 sur les systèmes entre 21 h 08 et 21 h 21.",
+        "Journal d'accès : badge G-04 dans la galerie à 21 h 14."
+      ],
+      "relatedEvidenceIds": ["ev_ops_log", "ev_access_log", "ev_badge_g04", "ev_bank_notice", "ev_purchase_offer", "ev_maintenance_pouch"]
+    },
+    {
+      "id": "suspect_maya",
+      "name": "Maya Simon",
+      "age": 34,
+      "occupation": "Restauratrice",
+      "relation": "Responsable de l'atelier de restauration, fournit les pochettes de maintenance.",
+      "statement": "« Je suis partie à 21 h 03, après avoir rangé l'atelier. Je n'ai pas remis les pieds dans le musée. »",
+      "timeline": [
+        "21 h 03 : sortie du bâtiment consignée au registre de sortie.",
+        "Atelier retrouvé rangé, outils complets.",
+        "Fournit le tissu bleu nuit utilisé pour les pochettes de maintenance."
+      ],
+      "relatedEvidenceIds": ["ev_exit_register", "ev_fabric_samples", "ev_workbench"]
+    },
+    {
+      "id": "suspect_paul",
+      "name": "Paul Derval",
+      "age": 58,
+      "occupation": "Directeur du musée",
+      "relation": "Directeur, détient un double des clés de la vitrine.",
+      "statement": "« J'étais dans mon bureau toute la soirée, je travaillais sur le budget. »",
+      "timeline": [
+        "21 h 10 – 21 h 24 : appel professionnel reçu sur la ligne fixe du bureau.",
+        "Le combiné filaire ne permet pas de répondre ailleurs qu'au bureau.",
+        "Aucun mouvement de badge enregistré pour le directeur pendant l'intervalle."
+      ],
+      "relatedEvidenceIds": ["ev_call_log"]
+    }
+  ],
+  "motives": [
+    { "id": "mot_financial", "label": "Mobile financier : dettes importantes et revente privée prévue" },
+    { "id": "mot_rivalry", "label": "Rivalité professionnelle avec la direction" },
+    { "id": "mot_ideology", "label": "Vol commandé pour motifs idéologiques" },
+    { "id": "mot_opportunity", "label": "Vol d'opportunité sans préméditation" }
+  ],
+  "methodSteps": [
+    { "id": "step_camera", "label": "Désactiver la caméra de la galerie depuis le poste de sécurité" },
+    { "id": "step_alarm", "label": "Désactiver l'alarme avec son identifiant personnel G-04" },
+    { "id": "step_enter", "label": "Entrer dans la galerie avec son badge" },
+    { "id": "step_take", "label": "Retirer le médaillon de sa vitrine" },
+    { "id": "step_hide", "label": "Dissimuler le médaillon dans une pochette de maintenance" },
+    { "id": "step_reactivate", "label": "Réactiver la caméra et l'alarme" },
+    { "id": "step_forge", "label": "Forcer la serrure de la vitrine" },
+    { "id": "step_steal_badge", "label": "Voler le badge d'un collègue pour entrer" },
+    { "id": "step_fake_register", "label": "Falsifier le registre de sortie de l'atelier" }
+  ],
+  "solution": {
+    "culpritId": "suspect_etienne",
+    "motiveId": "mot_financial",
+    "methodStepIds": ["step_camera", "step_alarm", "step_enter", "step_take", "step_hide", "step_reactivate"],
+    "decisiveEvidenceIds": [
+      "ev_ops_log",
+      "ev_access_log",
+      "ev_badge_g04",
+      "ev_fiber_blue",
+      "ev_maintenance_pouch",
+      "ev_bank_notice",
+      "ev_purchase_offer"
+    ],
+    "explanation": "Étienne Roux a désactivé la caméra de la galerie à 21 h 08 puis l'alarme à 21 h 11 depuis le poste de sécurité, les quatre opérations portant son identifiant G-04. À 21 h 14, son badge a ouvert la galerie et il a retiré le médaillon de la vitrine, dont la serrure n'a pas été forcée et dont la dernière ouverture à 21 h 12 correspond à un accès légitime. Il a dissimulé le médaillon dans une pochette de maintenance en tissu bleu nuit : la fibre retrouvée sur le support correspond exactement à la pochette retrouvée dans son casier. Il est ressorti à 21 h 19 et a réactivé les systèmes à 21 h 20 et 21 h 21. Sa déclaration (« resté à l'accueil de 21 h à 21 h 30 ») est contredite par ses propres journaux. Le mobile est financier : notification bancaire pour 9 740 € de mensualités impayées et proposition d'achat privée pour une « pièce dorée » à 40 % de la valeur. Maya Simon a quitté le bâtiment à 21 h 03 (registre de sortie) et Paul Derval était au téléphone dans son bureau de 21 h 10 à 21 h 24 (ligne fixe).",
+    "postResolutionReveal": {
+      "evidenceName": "Médaillon de Valmont",
+      "text": "Après l'aveu d'Étienne Roux, le médaillon a été retrouvé au fond de son casier n° 04, enveloppé dans la pochette de maintenance en tissu bleu nuit. Il est resté sur place, caché dans le bâtiment, dans l'attente d'une extraction plus sûre."
+    }
+  },
+  "rewardXp": 100
+}

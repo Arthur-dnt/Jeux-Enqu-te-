@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "DOSSIER 9",
+    "slug": "dossier9",
+    "version": "0.1.0",
+    "scheme": "dossier9",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#111722",
+    "splash": {
+      "backgroundColor": "#111722",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dossier9.app"
+    },
+    "android": {
+      "package": "com.dossier9.app",
+      "adaptiveIcon": { "backgroundColor": "#111722" }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite"
+    ],
+    "experiments": { "typedRoutes": false }
+  }
+}

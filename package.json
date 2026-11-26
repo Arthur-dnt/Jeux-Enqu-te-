@@ -1,0 +1,45 @@
+{
+  "name": "dossier9",
+  "version": "0.1.0",
+  "main": "expo-router/entry",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "expo": "~53.0.9",
+    "expo-constants": "~17.1.6",
+    "expo-haptics": "~14.1.4",
+    "expo-linear-gradient": "~14.1.4",
+    "expo-linking": "~7.1.5",
+    "expo-router": "~5.0.7",
+    "expo-sqlite": "~15.2.10",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-svg": "15.11.2",
+    "react-native-url-polyfill": "^2.0.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "zod": "^3.24.3",
+    "zustand": "^5.0.4"
+  },
+  "devDependencies": {
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~19.0.10",
+    "jest": "^29.7.0",
+    "jest-expo": "~53.0.5",
+    "typescript": "~5.8.3",
+    "react-test-renderer": "19.0.0"
+  }
+}
